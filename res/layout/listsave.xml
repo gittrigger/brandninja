@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#e0e0e0" >
+
+	<ListView android:id="@+id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:scrollbars="vertical" android:scrollbarStyle="insideInset" android:background="@drawable/thescoopseattlebackground"
+		android:layout_weight="1" android:listSelector="@drawable/listblue"  android:descendantFocusability="blocksDescendants" android:drawingCacheQuality="auto" android:footerDividersEnabled="true" android:headerDividersEnabled="true" android:fadingEdge="none" android:choiceMode="multipleChoice" android:layout_marginLeft="0px" android:paddingLeft="4px" android:layout_marginBottom="0px" android:layout_alignParentTop="true" android:fastScrollEnabled="true"/>
+
+	<TextView android:id="@+id/android:empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:textStyle="bold" android:text="Everything Read is Saved." android:shadowDx="2" android:shadowDy="2" android:shadowColor="#202090" android:textColor="#e0e0e0" android:textSize="24px" android:background="@drawable/thescoopseattlebackground" android:shadowRadius="1.5" android:layout_marginBottom="0px" android:layout_alignParentTop="true" />
+    
+    <ImageView android:id="@+id/listsave_footer" android:src="@drawable/listfooter" android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:layout_height="wrap_content" android:adjustViewBounds="true" android:scaleType="fitXY"/>
+    <TextView android:id="@+id/listsave_text" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginLeft="20px" android:layout_marginRight="20px" android:gravity="center" android:layout_alignParentBottom="true" android:text="Welcome" android:textColor="#000000" android:shadowColor="#A0ffffff" android:shadowRadius="1.5" android:textStyle="bold" android:layout_marginBottom="14px" android:shadowDy="1.5" android:shadowDx="1.5"/>
+
+</RelativeLayout>

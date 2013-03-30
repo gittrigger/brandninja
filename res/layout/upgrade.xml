@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+    
+    
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:visibility="gone"><WebView android:id="@+id/upgrade_view" android:layout_width="fill_parent" android:layout_height="wrap_content" /></LinearLayout>
+    <ImageView android:id="@+id/upgrade_image" android:layout_width="fill_parent" android:layout_height="90px" android:scaleType="fitCenter" android:src="@drawable/customize" android:focusable="true" android:clickable="true" android:layout_alignParentTop="true"/>
+    <TextView android:id="@+id/upgrade_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_marginRight="10px" android:shadowColor="#000000" android:shadowDx=".5" android:shadowDy=".5" android:shadowRadius="2" android:textSize="16px" android:layout_marginBottom="2px" android:layout_below="@+id/upgrade_image" android:layout_above="@+id/upgrade_code"/>
+    <EditText android:id="@+id/upgrade_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_marginRight="10px" android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

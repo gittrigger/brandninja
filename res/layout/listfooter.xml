@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65px" android:paddingTop="1px" android:paddingBottom="1px" android:paddingLeft="10px" android:paddingRight="3px">
+
+	<ImageView android:id="@+id/listfooter_image" android:src="@drawable/dot" android:maxHeight="48px" android:maxWidth="48px" android:layout_alignParentTop="true" android:layout_height="48px" android:layout_width="48px" android:fadingEdge="horizontal|vertical" android:layout_marginRight="5px"/>
+	<TextView android:id="@+id/listfooter_text" android:layout_width="fill_parent" android:text="Footer" android:fadingEdge="horizontal" android:layout_height="wrap_content" android:textSize="16px" android:layout_alignParentTop="true" android:textColor="#f0f0f0" android:gravity="center" />
+	
+</RelativeLayout>
+    

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:id="@+id/start_main">
+
+<TabHost 
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:addStatesFromChildren="true" android:background="@drawable/globebk"><!-- android:alwaysDrawnWithCache="false" -->
+    <LinearLayout
+        android:orientation="vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#000000"
+            >
+            
+    	</FrameLayout>
+    </LinearLayout>
+</TabHost>
+
+<ImageView android:id="@+id/start_cover" android:layout_width="fill_parent" android:layout_alignParentTop="true" android:layout_height="fill_parent" android:adjustViewBounds="true" android:scaleType="fitXY" android:src="@drawable/glassblur" android:nextFocusRight="@+id/start_action" android:nextFocusUp="@+id/start_customize" android:nextFocusLeft="@+id/start_close" android:nextFocusDown="@+id/start_action"/>
+
+<ImageView android:id="@+id/start_console" android:visibility="gone" android:src="@drawable/purple_tvview" android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:adjustViewBounds="true" android:scaleType="fitXY" android:layout_height="wrap_content" android:keepScreenOn="true" android:nextFocusRight="@+id/start_action" android:nextFocusUp="@+id/start_customize" android:nextFocusLeft="@+id/start_close" android:nextFocusDown="@+id/start_action" />
+
+<ImageView android:id="@+id/start_title" android:layout_width="fill_parent" android:layout_above="@id/start_console" android:layout_height="wrap_content" android:adjustViewBounds="true" android:scaleType="fitXY" android:src="@drawable/startuptitle" android:layout_marginBottom="-15px" android:nextFocusRight="@+id/start_action" android:nextFocusUp="@+id/start_customize" android:nextFocusLeft="@+id/start_close" android:nextFocusDown="@+id/start_action" />
+
+<LinearLayout android:id="@+id/start_customizebar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/start_title" android:gravity="center" android:orientation="horizontal" android:layout_marginBottom="-25px">
+	<ImageView android:id="@+id/start_customize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:scaleType="fitXY" android:src="@drawable/customize" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusRight="@+id/start_action" android:nextFocusLeft="@+id/start_close" android:nextFocusDown="@+id/start_action" android:nextFocusUp="@+id/start_customize" android:clickable="true"/>
+</LinearLayout>
+
+<LinearLayout android:id="@+id/start_actionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:gravity="center" android:orientation="horizontal" android:layout_marginBottom="0px">
+	<ImageView android:id="@+id/start_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:scaleType="fitXY" android:src="@drawable/console_close" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusRight="@+id/start_action" android:nextFocusUp="@+id/start_customize" android:nextFocusLeft="@+id/start_close" android:nextFocusDown="@+id/start_close" android:clickable="true"/>
+	<ImageView android:id="@+id/start_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:scaleType="fitXY" android:src="@drawable/console_pause"  android:focusable="true" android:focusableInTouchMode="true" android:nextFocusRight="@+id/start_action" android:nextFocusUp="@+id/start_customize" android:nextFocusLeft="@+id/start_close" android:nextFocusDown="@+id/start_action" android:clickable="true"/>
+</LinearLayout>
+
+<TextView android:id="@+id/start_text" android:layout_alignTop="@id/start_console" android:layout_alignBottom="@id/start_console" android:text="" android:textSize="25px" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="#000000" android:shadowDx="1.5" android:shadowDy="1.5" android:gravity="center_vertical|center" android:padding="2px" android:layout_marginBottom="40px" android:layout_marginTop="30px" android:layout_marginLeft="30px" android:layout_marginRight="30px" android:scrollbarStyle="outsideInset" android:scrollbars="vertical" android:textColor="#F0F0F0" android:shadowRadius="3" android:focusable="true" android:focusableInTouchMode="true"/>
+
+
+</RelativeLayout>
+
+
